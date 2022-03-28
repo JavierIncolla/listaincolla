@@ -1,0 +1,21 @@
+<table class="table table-striped table-sm">
+    <thead>
+      <tr>
+        <!-- <th scope="col">#</th> -->
+        <th scope="col">Nombre </th>
+        <th scope="col">Apellido </th>        
+        <th scope="col">Ciudad</th>
+        <th scope="col">Nota </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let objAlumno of alumnoList">
+        <td>{{ objAlumno.Nombre }}</td>
+        <td>{{ objAlumno.Apellido}}</td>        
+        <td>{{ objAlumno.Ciudad}}</td>  
+        <td [ngClass]=" objAlumno.Nota > 3 ? 'aprobado': 'desaprobado'">{{ objAlumno.Nota}}</td> 
+        <td *ngIf="objAlumno.Nota > 3" class="aprobado-UpperCase">aprobó</td>     
+        <td *ngIf="objAlumno.Nota < 4" class="desaprobado-UpperCase">desaprobó</td>
+      </tr>     
+    </tbody>
+  </table>

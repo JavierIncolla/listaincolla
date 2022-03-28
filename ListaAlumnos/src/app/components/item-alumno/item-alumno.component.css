@@ -1,0 +1,21 @@
+.aprobado{    
+    font-weight: bold;
+    color: rgba(26, 245, 6, 0.753) !important;
+}
+
+.desaprobado{  
+    font-weight: bold;  
+    color: #f70606 !important;
+}
+
+.aprobado-UpperCase{
+    font-weight: bold;
+    color: rgba(10, 99, 2, 0.753) !important;
+    text-transform: uppercase;
+}
+
+.desaprobado-UpperCase{
+    font-weight: bold;
+    color: #790101 !important;
+    text-transform: uppercase;
+}
